@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>及时雨引擎 - 传奇商业登陆器配置器</title>
+    <meta name="description" content="及时雨引擎(JSYM2) - 专注于热血传奇商业登陆器配置，提供强力反外挂，稳定高效的游戏引擎解决方案。" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              neon: {
+                blue: '#00f3ff',
+                purple: '#bc13fe',
+                pink: '#ff00ff',
+              },
+              dark: {
+                bg: '#050505',
+                card: '#111111',
+                surface: '#1a1a1a'
+              }
+            },
+            animation: {
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'cursor-blink': 'blink 1s step-end infinite',
+            },
+            keyframes: {
+              blink: {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '0' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        color: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      
+      /* Custom Font for Hero Section */
+      .font-tech {
+        font-family: 'MiSans', 'HarmonyOS Sans SC', 'HarmonyOS Sans', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #111;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00f3ff;
+      }
+      
+      /* Standard Neon Classes */
+      .neon-text-blue {
+        text-shadow: 0 0 5px #00f3ff, 0 0 10px #00f3ff, 0 0 20px #00f3ff;
+      }
+      .neon-text-purple {
+        text-shadow: 0 0 5px #bc13fe, 0 0 10px #bc13fe, 0 0 20px #bc13fe;
+      }
+      .neon-box {
+        box-shadow: 0 0 5px #00f3ff, inset 0 0 5px #00f3ff;
+      }
+
+      /* Dazzling Special Effects */
+      .dazzling-neon {
+        color: #ffffff;
+        text-shadow: 
+          0 0 5px #fff,
+          0 0 10px #fff,
+          0 0 20px #00f3ff,
+          0 0 35px #00f3ff,
+          0 0 40px #bc13fe,
+          0 0 50px #bc13fe,
+          0 0 75px #bc13fe;
+        animation: neon-pulse-mix 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes neon-pulse-mix {
+        0% {
+          text-shadow: 
+            0 0 4px #fff,
+            0 0 10px #fff,
+            0 0 20px #00f3ff,
+            0 0 35px #00f3ff,
+            0 0 40px #bc13fe,
+            0 0 50px #bc13fe,
+            0 0 75px #bc13fe;
+        }
+        100% {
+          text-shadow: 
+            0 0 2px #fff,
+            0 0 5px #fff,
+            0 0 15px #00f3ff,
+            0 0 25px #00f3ff,
+            0 0 30px #bc13fe,
+            0 0 40px #bc13fe,
+            0 0 60px #bc13fe;
+        }
+      }
+
+      /* Shine Sweep Animation */
+      @keyframes shine-sweep {
+        0% { transform: translateX(-150%) skewX(-20deg); }
+        20% { transform: translateX(150%) skewX(-20deg); }
+        100% { transform: translateX(150%) skewX(-20deg); }
+      }
+      
+      .animate-shine {
+        animation: shine-sweep 3s infinite ease-in-out;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
