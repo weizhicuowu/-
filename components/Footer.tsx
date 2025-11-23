@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
               <li><a href="#" className="hover:text-cyan-400 transition-colors">补丁生成器</a></li>
               <li><a href="#" className="hover:text-cyan-400 transition-colors">脚本命令查询</a></li>
               <li><a href="#" className="hover:text-cyan-400 transition-colors">UI 编辑器</a></li>
-              <li><a href="#" className="hover:text-cyan-400 transition-colors">DBC 2000</a></li>
+              <li><a href="#" className="hover:text-cyan-400 transition-colors">Navicat for SQLite</a></li>
             </ul>
           </div>
         </div>
